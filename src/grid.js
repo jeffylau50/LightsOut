@@ -4,7 +4,10 @@ import Box from './box.js'
 class Grid extends Component {
     render(){
         return(
-            <Box />
+            <div>
+            <Box lit={true} />
+            <Box lit={false} />
+            </div>
         )
     }
 }

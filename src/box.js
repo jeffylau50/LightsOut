@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import './box.css'
 
 class Box extends Component {
     render(){
         return(
-            <h1>test</h1>
+            <div className={`boxStyle ${this.props.lit == true && `boxLit`}`} ></div>
+            
         )
     }
 }
