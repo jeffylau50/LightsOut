@@ -28,7 +28,8 @@ class App extends Component {
 
     }
     newgame(e){
-        
+        window.location.reload();
+        this.setState({row: this.state.row, column: this.state.column})
     }
     render(){
         return(
@@ -37,10 +38,10 @@ class App extends Component {
             
             <Grid row={this.state.row} column={this.state.column} />
 
-            <a  class="neon-button neon-button__2">New Game</a>
+            <a  onClick={this.newgame} class="neon-button neon-button__2">New Game</a>
             <a  onClick={this.inputChange3x3} className="neon-button neon-button__1 buttonCustom">Easy</a>
             <a  onClick={this.inputChange5x5} className="neon-button neon-button__3 buttonCustom">Hard</a>
-            <a  onClick={this.inputChange7x7} className="neon-button neon-button__3 buttonCustom">Very Hard</a>
+            <a  onClick={this.inputChange7x7} className="neon-button neon-button__4 buttonCustom">Very Hard</a>
 
              
             </div>

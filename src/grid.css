@@ -1,3 +1,7 @@
+ h2{
+   color: white;
+ }
+
  .gridCSS{
      display: flex;
      margin: 0 auto;
@@ -199,3 +203,82 @@
     }
   }
   
+  @import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
+body {
+    background: #000;
+} 
+.neon {
+  font-family: 'londrina Outline', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 80px;
+  color: #fff;
+  letter-spacing: 2px;
+
+}
+
+.green {
+  text-shadow:
+    0 0 5px #36FF33,
+    0 0 10px #36FF33,
+    0 0 15px #36FF33,
+    0 0 25px #36FF33,
+    0 0 35px #36FF33,
+    0 0 45px #36FF33,
+    0 0 55px #36FF33,
+    0 0 65px #36FF33;
+    animation-name: green_lights;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.blue {
+  text-shadow: 
+    0 0 5px #7bacff,
+    0 0 10px #7bacff,
+    0 0 15px #7bacff,
+    0 0 25px #7bacff,
+    0 0 35px #7bacff,
+    0 0 45px #7bacff,
+    0 0 55px #7bacff,
+    0 0 65px #7bacff;
+    animation: green_lights 1.5s infinite;
+  
+}
+
+.pink {
+  text-shadow:
+    0 0 5px #F749F1,
+    0 0 10px #F749F1,
+    0 0 15px #F749F1,
+    0 0 25px #F749F1,
+    0 0 35px #F749F1,
+    0 0 45px #F749F1,
+    0 0 55px #F749F1,
+    0 0 65px #F749F1;
+    animation: pink_lights 2.3s infinite;
+}
+
+@keyframes green_lights {
+  5% {text-shadow: 0 0 5px #36FF33;}
+  10% {text-shadow: 0 0 10px #36FF33;}
+  15% {text-shadow: 0 0 15px #36FF33;} 
+  25% {text-shadow: 0 0 25px #36FF33;} 
+  35% {text-shadow: 0 0 35px #36FF33;}  
+}
+
+@keyframes blue_lights {
+  10% {text-shadow: 0 0 10px #7bacff;}
+  15% {text-shadow: 0 0 15px #7bacff;}
+  25% {text-shadow: 0 0 25px #7bacff;} 
+  35% {text-shadow: 0 0 35px #7bacff;} 
+  45% {text-shadow: 0 0 45px #7bacff;}  
+}
+
+@keyframes pink_lights {
+  20% {text-shadow: 0 0 20px #F749F1;}
+  35% {text-shadow: 0 0 35px #F749F1;}
+  45% {text-shadow: 0 0 45px #F749F1;} 
+  55% {text-shadow: 0 0 55px #F749F1;} 
+  85% {text-shadow: 0 0 85px #F749F1;}  
+}

@@ -14,7 +14,8 @@ class Grid extends Component {
         super(props);
         this.state = {
         win: false,
-        grid: this.createGrid()
+        grid: this.createGrid(),
+        move: 0
         };
     }
 
@@ -32,6 +33,9 @@ class Grid extends Component {
     }
 
     changeOthers(location){
+        this.setState((state) => {
+            return {move: state.move + 1}
+        } )
         let {row, column} = this.props;
         let grid = this.state.grid;
         let [y,x] = location.split("-").map(Number);
@@ -75,8 +79,10 @@ class Grid extends Component {
            <table className='gridCSS'>
             {table}
             </table>
-           <br />
-            
+            <br />
+            <br />
+
+            <h2 class='neon green'>Move:{this.state.move}</h2>            
 
          </div>
         )
