@@ -43,21 +43,22 @@ class Grid extends Component {
   
    
     render(){
-    
+    let table = [];
+    for(let y = 0; y <this.props.row; y++){
+        let row = [];
+        for (let x = 0; x < this.props.column;x++){
+            row.push(<Box lit={this.state.board[y][x]}/>)
+        }
+        table.push(<tr>{row}</tr>);
+    }
 
         return(
            <div>
                <h1>{this.props.title}</h1>
-               <h1>{this.props.board}</h1>
-           <table>
+               
+           <table className='gridCSS'>
             
-            <tr>
-            <th><Box /></th>
-            <th><Box /></th>
-            <th><Box /></th>   
-            <th><Box /></th>        
-            <th><Box /></th>        
-            </tr>
+            {table}
             
          </table>
          </div>
