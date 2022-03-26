@@ -70,13 +70,14 @@ class Grid extends Component {
         return(
            <div>
                
-               <h1>{this.state.win === true?'Congrats! You won':this.props.title}</h1>
+               <h1>{this.state.win === true?'You won!':this.props.title}</h1>
                <br /> <br />
            <table className='gridCSS'>
             {table}
             </table>
            <br />
-            <a href="#" class="neon-button neon-button__2">New Game</a>
+            
+
          </div>
         )
     }
