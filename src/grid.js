@@ -5,7 +5,7 @@ import './grid.css'
 class Grid extends Component {
 
     static defaultProps ={
-        title: '5x5 Lights Out',
+        title: 'Lights Out',
         row: 5,
         column: 5,
         chance: 0.25
@@ -71,10 +71,12 @@ class Grid extends Component {
            <div>
                
                <h1>{this.state.win === true?'Congrats! You won':this.props.title}</h1>
-               
+               <br /> <br />
            <table className='gridCSS'>
             {table}
             </table>
+           <br />
+            <a href="#" class="neon-button neon-button__2">New Game</a>
          </div>
         )
     }
