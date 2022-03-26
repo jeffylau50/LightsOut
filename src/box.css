@@ -1,9 +1,13 @@
 .boxStyle{
     width:100px;
     height: 100px;
-    background-color: rgb(0, 12, 116);
+    background-color: rgb(87, 87, 87);
+    border-width: 1px;
+    border-style: solid;
+    border-color: BLACK;
 }
 
+
 .boxLit{
-    background-color: aqua;
+    background-color: rgb(36, 253, 253);
 }
