@@ -14,32 +14,35 @@ class Grid extends Component {
         super(props);
         this.state = {
         win: false,
-        board: this.createBoard()
+        grid: this.createGrid()
         };
-        this.handleClick= this.handleClick.bind(this);
     }
 
 
-    createBoard(){
-    let board = []
+    createGrid(){
+    let grid = []
     for(let y=0;y<this.props.row;y++){
         let row =[];
        for (let x=0; x<this.props.column; x++){
          row.push(Math.random() < this.props.chance)
        }
-        board.push(row);
+        grid.push(row);
     }
-    return board
+    return grid
     }
 
-   handleClick(){
-       if(this.state.lit){
-           return this.setState({lit: false})
-       } else if (!this.state.lit){
-           return this.setState({lit: true})
-       }
-   }
-   
+    changeOthers(location){
+        let {row, column} = this.props;
+        let grid = this.state.grid;
+        let [y,x] = location.split("-").map(Number);
+
+        function change(y, x){
+            if (x>= 0 && x < column && y>= 0 && y < row){
+                grid[y][x] = !grid[y][x];
+            }
+        }
+    }
+
   
    
     render(){
@@ -47,7 +50,10 @@ class Grid extends Component {
     for(let y = 0; y <this.props.row; y++){
         let row = [];
         for (let x = 0; x < this.props.column;x++){
-            row.push(<Box lit={this.state.board[y][x]}/>)
+            let location = `${y}-${x}`
+            row.push(<Box key={location} lit={this.state.grid[y][x]}
+            action={() => this.changeOthers(location)}
+            />)
         }
         table.push(<tr>{row}</tr>);
     }
