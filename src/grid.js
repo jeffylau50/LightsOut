@@ -41,6 +41,15 @@ class Grid extends Component {
                 grid[y][x] = !grid[y][x];
             }
         }
+        change(y, x);
+        change(y, x + 1);
+        change(y, x -1);
+        change(y + 1, x);
+        change(y - 1, x)
+
+        let win = grid.every(row => row.every(box => !box))
+        
+        this.setState({grid:grid, win: win})
     }
 
   
@@ -60,13 +69,12 @@ class Grid extends Component {
 
         return(
            <div>
-               <h1>{this.props.title}</h1>
+               
+               <h1>{this.state.win === true?'Congrats! You won':this.props.title}</h1>
                
            <table className='gridCSS'>
-            
             {table}
-            
-         </table>
+            </table>
          </div>
         )
     }
