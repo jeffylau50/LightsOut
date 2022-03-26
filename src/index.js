@@ -7,12 +7,12 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-        row: 7,
-        column: 7,
+        row: 6,
+        column: 6,
         };
         this.inputChange3x3= this.inputChange3x3.bind(this);
         this.inputChange5x5= this.inputChange5x5.bind(this);
-        this.inputChange7x7= this.inputChange7x7.bind(this);
+        this.inputChange6x6= this.inputChange6x6.bind(this);
         this.newgame= this.newgame.bind(this);
     }
     inputChange3x3(e){
@@ -23,8 +23,8 @@ class App extends Component {
         this.setState({row: 5, column: 5})
         
     }
-    inputChange7x7(e){
-        this.setState({row: 7, column: 7})
+    inputChange6x6(e){
+        this.setState({row: 6, column: 6})
 
     }
     newgame(e){
@@ -41,7 +41,7 @@ class App extends Component {
             <a  onClick={this.newgame} class="neon-button neon-button__2">New Game</a>
             <a  onClick={this.inputChange3x3} className="neon-button neon-button__1 buttonCustom">Easy</a>
             <a  onClick={this.inputChange5x5} className="neon-button neon-button__3 buttonCustom">Hard</a>
-            <a  onClick={this.inputChange7x7} className="neon-button neon-button__4 buttonCustom">Very Hard</a>
+            <a  onClick={this.inputChange6x6} className="neon-button neon-button__4 buttonCustom">Very Hard</a>
 
              
             </div>

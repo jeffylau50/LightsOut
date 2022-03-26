@@ -96,7 +96,7 @@
     color: var(--clr-four);
     border: var(--clr-four) 0.125em solid;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em --clr-four;
-    box-shadow: inset 0 0 0.5em 0 var(--clr-three), 0 0 0.5em 0 var(--clr-four);
+    box-shadow: inset 0 0 0.5em 0 var(--clr-four), 0 0 0.5em 0 var(--clr-four);
   }
   
   .neon-button::before {
@@ -142,6 +142,10 @@
   .neon-button__3::before {
     background: var(--clr-three);
   }
+
+  .neon-button__4::before {
+    background: var(--clr-four);
+  }
   
   .neon-button::after {
     content: "";
@@ -168,6 +172,11 @@
   .neon-button__3::after {
     box-shadow: 0 0 2em 0.5em var(--clr-three);
     background-color: var(--clr-three);
+  }
+
+  .neon-button__4::after {
+    box-shadow: 0 0 2em 0.5em var(--clr-four);
+    background-color: var(--clr-four);
   }
   
   .neon-button:hover::before,
