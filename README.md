@@ -8,7 +8,7 @@ Deployed on Heroku: [https://lights-out-2.herokuapp.com/]
 
 ***Window 10 PC Demo***
 
-<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/pcDemo1.gif"/>
+<img src="https://github.com/jeffylau50/LightsOutGame/blob/master/image/pcDemo.gif"/>
 
 
 ## Responsive Mobile Design
@@ -45,34 +45,17 @@ $ npm start
 ## Feature
 
 
-### Icon and Display Name Feature
+### 3 Difficulty Setting
 
-1. For users that signed in with their Google account. Orange Chat will use their default Google account profile picture and name as their chat icon/display name in the app.
-
-2. For users that registered via the built in Email/ Password system, users will get to choose their own display name and a randomly assigned in-app icon which can be chosen in the register page. 
+Players are able to choose from three difficulty (easy, hard, very hard) based on their skill
 
 <img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650176141/github/IconRandom_k0v6pp.gif'>
 
-### Emoji Picker
-
-Unlike mobile platform, desktop/laptop users may not have easy access to Emoji since most personal computer operating system does not come built in with an Emoji keyboard. Therefore, I added an Emoji Picker into the application for better user experience.
-
-<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/emojiDemo.PNG"/>
-
-### Multipe Chat Rooms
-
-Users are able to select chat room on the left. There are 3 pre set chat rooms in the application.
-
-<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/swichRoomDemo.gif"/>
 
 ## Performance
-
-### Client Side Routing
-
-Instead of traditional server side routing, I opted to use client side routing with react router dom. This can greatly improved user experience because every component is rendered all at once which eliminated the loading process between different pages of the site. As a result, this makes the entire application appears to run a lot smoother for the user.
 
 ### Performance Scores
 
 ***This Online Chat App achieved a score of 99% on Google PageSpeed Insights***
 
-<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/pcDemo1.gif"/>
+<img src="https://github.com/jeffylau50/LightsOutGame/blob/master/image/score.PNG"/>
