@@ -8,7 +8,7 @@ Deployed on Heroku: [https://lights-out-2.herokuapp.com/]
 
 ***Window 10 PC Demo***
 
-<img src="https://github.com/jeffylau50/LightsOutGame/blob/master/image/pcDemo.gif"/>
+<img src="https://github.com/jeffylau50/LightsOutGame/blob/master/image/pcDemo1.gif"/>
 
 
 ## Responsive Mobile Design
