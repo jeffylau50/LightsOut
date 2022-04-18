@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Lights Out | Web Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Web Game was built with React.js deployed on HeroKu
 
-## Available Scripts
+Deployed on Heroku: [https://lights-out-2.herokuapp.com/]
 
-In the project directory, you can run:
+***This Online Chat App achieved a score of 99% on Google PageSpeed Insights***
 
-### `npm start`
+***Window 10 PC Demo***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/pcDemo1.gif"/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Responsive Mobile Design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Although this app was mainly developed for the desktop web platform, mobile adaptability was also one of the main focus of this project. Therefore, Responsive design was used in this project. This chat app should work on most mobile devices as shown below.
 
-### `npm run build`
+***iPhone 11 Demo***
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/mobileDemo1.gif" width="414" height="900"/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Table of Contents
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Installation](#installation)
+- [Feature](#feature)
+- [Performance](#Performance)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation  
+  
+### Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Install npm packages and npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```shell
+$ npm install
+$ npm run build
+$ npm start
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Feature
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Icon and Display Name Feature
 
-### Analyzing the Bundle Size
+1. For users that signed in with their Google account. Orange Chat will use their default Google account profile picture and name as their chat icon/display name in the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. For users that registered via the built in Email/ Password system, users will get to choose their own display name and a randomly assigned in-app icon which can be chosen in the register page. 
 
-### Making a Progressive Web App
+<img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650176141/github/IconRandom_k0v6pp.gif'>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Emoji Picker
 
-### Advanced Configuration
+Unlike mobile platform, desktop/laptop users may not have easy access to Emoji since most personal computer operating system does not come built in with an Emoji keyboard. Therefore, I added an Emoji Picker into the application for better user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/emojiDemo.PNG"/>
 
-### Deployment
+### Multipe Chat Rooms
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Users are able to select chat room on the left. There are 3 pre set chat rooms in the application.
 
-### `npm run build` fails to minify
+<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/swichRoomDemo.gif"/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Performance
+
+### Client Side Routing
+
+Instead of traditional server side routing, I opted to use client side routing with react router dom. This can greatly improved user experience because every component is rendered all at once which eliminated the loading process between different pages of the site. As a result, this makes the entire application appears to run a lot smoother for the user.
+
+### Performance Scores
+
+***This Online Chat App achieved a score of 99% on Google PageSpeed Insights***
+
+<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/pcDemo1.gif"/>
