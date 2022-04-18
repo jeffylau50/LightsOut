@@ -11,16 +11,6 @@ Deployed on Heroku: [https://lights-out-2.herokuapp.com/]
 <img src="https://github.com/jeffylau50/LightsOutGame/blob/master/image/pcDemo.gif"/>
 
 
-## Responsive Mobile Design
-
-Although this app was mainly developed for the desktop web platform, mobile adaptability was also one of the main focus of this project. Therefore, Responsive design was used in this project. This chat app should work on most mobile devices as shown below.
-
-***iPhone 11 Demo***
-
-<img src="https://github.com/jeffylau50/OnlineChatApp/blob/master/demo/mobileDemo1.gif" width="414" height="900"/>
-
-
-
 ## Table of Contents
 
 - [Installation](#installation)
@@ -49,7 +39,7 @@ $ npm start
 
 Players are able to choose from three difficulty (easy, hard, very hard) based on their skill
 
-<img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650176141/github/IconRandom_k0v6pp.gif'>
+<img src="https://github.com/jeffylau50/LightsOutGame/blob/master/image/diffDemo.gif"/>
 
 
 ## Performance
