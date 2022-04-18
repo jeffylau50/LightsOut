@@ -48,4 +48,4 @@ Players are able to choose from three difficulty (easy, hard, very hard) based o
 
 ***This Online Chat App achieved a score of 99% on Google PageSpeed Insights***
 
-<img src="https://github.com/jeffylau50/LightsOutGame/blob/master/image/score.PNG"/>
+<img src="https://github.com/jeffylau50/LightsOutGame/blob/master/image/score1.PNG"/>
