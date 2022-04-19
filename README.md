@@ -2,6 +2,8 @@
 
 This Web Game was built with React.js deployed on HeroKu
 
+Goal of the game is turn off all the lights on the panel.
+
 Deployed on Heroku: [https://lights-out-2.herokuapp.com/]
 
 ***This Web Game achieved a score of 99% on Google PageSpeed Insights***
